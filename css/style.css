@@ -1,167 +1,160 @@
-
-body{
-  font-family: "Montserrat"
+/* Base Typography Restructuring */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+  line-height: 1.6;
 }
 
-#title{
-  background-color: #F7F7F7;
-
-}
-.kev_intro{
-  text-align: center;
-  font-size: 2.5rem;
-}
-.kev_story{
-  text-align: center;
-  padding: 3% 15%;
-}
-.Download{
-  color: #FFF;
-  text-decoration: none;
-}
-.d_kev{
-  margin-left: 90%;
-  margin-top: 0;
-}
-#details{
-  text-align: center;
-  padding: 3% 15%;
-}
-.s_point{
-  font-family: "Montserrat-Bold";
-  font-weight: bold;
+h1, h2, h3, .kev, .impr, .ctadetails {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #111111;
 }
 
-p{
-  color: #8F8F8F;
-}
-.container_fluid{
-  padding: 3% 15%;
-}
-
-.kev{
-  font-family: "Montserrat-Black";
-  font-size: 3.0rem;
-  line-height: 1;
-}
-.impr{
-  font-family: "Montserrat-Bold";
-  font-size: 2rem;
-  line-height: 1
-}
-.kevin{
-  text-align: center;
-  margin-bottom: 0
-}
-.kev_o{
-  text-decoration: none;
-  color:#000
-}
-
-/* Navigation bar */
-.navbar{
-  margin-bottom: 4.5rem;
-}
-
-.navbar-brand{
-  font-family: "Ubuntu";
-  font-size: 3rem;
-  font-weight: bold;
-}
-.nav-item{
-  padding: 0 18px;
-}
-
-.nav-link{
-  font-size: 45px;
-  font-family: "Montserrat-Light";
-}
-
-
-/* Title image */
-.analys{
-  width: 100%;
-  right: 30%;
-}
-.ana_img{
-  width:10%;
-  margin: 20px;
-}
-.analysispic{
-  width:4%
-}
-.details{
-  text-align: center;
-}
-/* features section */
-
-#features{
-  text-align: center;
-  padding: 5%;
-}
-.p_img{
-  width: 10%;
-  margin-bottom: 1rem;
-}
-
-/* Testimonials */
-#testimonials{
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff;
-}
-
-.carousel-item{
-  padding: 7% 18%;
-}
-
-/* Pricing section */
-
-#pricing{
-  padding: 100px;
-  text-align: center
-}
-.pricing_col{
-  padding: 3% 2%;
-
-}
-
-@media query(max-width: 1028px) {
-#title{
-  text-align: center
-}
-.kev{
+p {
+  color: #6c757d;
   font-size: 1rem;
 }
+
+/* Structural Layout Sections */
+#title {
+  background-color: #F8F9FA;
+  padding-bottom: 2rem;
 }
 
-/* footer */
-#cta{
-  color: #FFF;
-  background-color: #ef8172;
-  padding: 7% 15%;
-}
-.ctadetails{
-  font-family: "Montserrat-Bold";
-  font-size: 3rem;
-  text-align: center
+.container_fluid {
+  padding: 3% 8%;
 }
 
-#footer{
-  padding: 2% 18%;
-
+/* Clean, Balanced Navigation Layout */
+.navbar {
+  margin-bottom: 2rem;
 }
-.fot_m{
-  width:20%;
-  margin-left: 50%;
 
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
-.cop{
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
 
+.nav-item {
+  padding: 0 10px;
 }
-.check{
-  margin-bottom: 2%
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #495057 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #000000 !important;
+}
+
+/* Feature Grid Adjustments */
+#features {
+  padding: 5rem 0;
+}
+
+.feature-box h3 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.p_img {
+  width: 64px;
+  height: auto;
+}
+
+/* Testimonials Slide Customization */
+#testimonials {
+  background-color: #111111; /* Changed from red to modern technical dark background */
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+#testimonials h2, #testimonials em {
+  color: #ffffff !important;
+}
+
+.ana_img {
+  width: 48px;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+/* Capabilities Infrastructure Matrix */
+#pricing {
+  padding: 5rem 0;
+}
+
+.pricing_col {
+  padding: 0 10px;
+}
+
+.card {
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* Call to Action Bar */
+#cta {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+.ctadetails {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Image Optimization Constraints */
+.analys {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Valid, High-Performance Mobile Fixes */
+@media (max-width: 992px) {
+  .container_fluid {
+    padding: 3% 5%;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+  
+  h1, .kev {
+    font-size: 1.8rem !important;
+  }
+  
+  #pricing, #features {
+    padding: 3rem 0;
+  }
 }
