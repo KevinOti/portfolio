@@ -1,160 +1,193 @@
-/* Base Typography Restructuring */
+/* Custom Terminal Interface Theme Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  color: #333333;
-  line-height: 1.6;
+    background-color: #0f1115; /* Sleek cyber-dark background canvas */
+    font-family: 'JetBrains Mono', monospace;
+    color: #a9b1d6; /* Clean high-contrast readability text color */
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-h1, h2, h3, .kev, .impr, .ctadetails {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  color: #111111;
+/* Master Framework Frame Container */
+.terminal-container {
+    background-color: #1a1b26;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border: 1px solid #24283b;
+    overflow: hidden;
 }
 
-p {
-  color: #6c757d;
-  font-size: 1rem;
+/* Simulated OS Window Control Panels */
+.terminal-header {
+    background-color: #16161e;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #24283b;
 }
 
-/* Structural Layout Sections */
-#title {
-  background-color: #F8F9FA;
-  padding-bottom: 2rem;
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
 }
 
-.container_fluid {
-  padding: 3% 8%;
+.red { background-color: #f7768e; }
+.yellow { background-color: #e0af68; }
+.green { background-color: #9ece6a; }
+
+.window-title {
+    color: #565f89;
+    font-size: 0.85rem;
+    margin-left: auto;
+    font-weight: 500;
 }
 
-/* Clean, Balanced Navigation Layout */
-.navbar {
-  margin-bottom: 2rem;
+/* Body Content Controls */
+.terminal-body {
+    padding: 2rem;
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+.profile-header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
 }
 
-.nav-item {
-  padding: 0 10px;
+.subtitle {
+    color: #7aa2f7; /* Highlighting your structural title */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
-.nav-link {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #495057 !important;
-  transition: color 0.2s ease-in-out;
+.location {
+    color: #565f89;
+    font-size: 0.9rem;
 }
 
-.nav-link:hover {
-  color: #000000 !important;
+.terminal-divider {
+    border: 0;
+    border-top: 1px dashed #24283b;
+    margin: 1.75rem 0;
 }
 
-/* Feature Grid Adjustments */
-#features {
-  padding: 5rem 0;
+/* System Engine Execution Logs Formatting */
+.log-section {
+    background-color: #16161e;
+    padding: 1.25rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-left: 3px solid #7aa2f7;
 }
 
-.feature-box h3 {
-  font-size: 1.3rem;
-  margin-top: 1rem;
+.timestamp { color: #565f89; margin-right: 0.5rem; }
+.status-success { color: #9ece6a; font-weight: 700; }
+.status-warning { color: #e0af68; font-weight: 700; }
+.status-info { color: #a9b1d6; }
+
+/* Grid Capabilities Layout Matrix */
+.architecture-section h2, .portfolio-section h2, .terminal-footer h2 {
+    color: #ff9e64;
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
 }
 
-.p_img {
-  width: 64px;
-  height: auto;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
 }
 
-/* Testimonials Slide Customization */
-#testimonials {
-  background-color: #111111; /* Changed from red to modern technical dark background */
-  color: #ffffff;
-  padding: 5rem 0;
+.grid-card {
+    background-color: #16161e;
+    padding: 1.25rem;
+    border-radius: 4px;
+    border: 1px solid #24283b;
 }
 
-#testimonials h2, #testimonials em {
-  color: #ffffff !important;
+.grid-card h3 {
+    color: #7aa2f7;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
 }
 
-.ana_img {
-  width: 48px;
-  height: auto;
-  margin-top: 1.5rem;
+.grid-card p {
+    font-size: 0.88rem;
+    color: #9aa5ce;
+    line-height: 1.5;
 }
 
-/* Capabilities Infrastructure Matrix */
-#pricing {
-  padding: 5rem 0;
+/* Portfolio Link Triggers */
+.section-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
 }
 
-.pricing_col {
-  padding: 0 10px;
+.repo-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-.card {
-  border: 1px solid #e9ecef;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.terminal-link {
+    color: #9ece6a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+.terminal-link:hover {
+    color: #7aa2f7;
+    transform: translateX(4px);
 }
 
-.card-body p {
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-  text-align: left;
-  padding-left: 10%;
+/* Footer Control Rules */
+.terminal-footer p {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
 }
 
-/* Call to Action Bar */
-#cta {
-  background-color: #111111;
-  color: #ffffff;
-  padding: 5rem 0;
+.footer-links a {
+    color: #bb9af3;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 1.5rem;
+    font-size: 0.95rem;
 }
 
-.ctadetails {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.4;
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
-/* Image Optimization Constraints */
-.analys {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.copyright {
+    color: #565f89 !important;
+    font-size: 0.8rem !important;
+    margin-top: 2rem;
 }
 
-/* Valid, High-Performance Mobile Fixes */
-@media (max-width: 992px) {
-  .container_fluid {
-    padding: 3% 5%;
-  }
-  
-  #title {
-    text-align: center;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-  
-  .nav-link {
-    font-size: 1.2rem;
-    padding: 10px 0;
-  }
-  
-  h1, .kev {
-    font-size: 1.8rem !important;
-  }
-  
-  #pricing, #features {
-    padding: 3rem 0;
-  }
+/* Flawless Mobile Responsiveness Overrides */
+@media (max-width: 600px) {
+    body { padding: 1rem 0.5rem; }
+    .terminal-body { padding: 1.25rem; }
+    .profile-header h1 { font-size: 1.6rem; }
+    .subtitle { font-size: 0.95rem; }
+    .log-section { font-size: 0.78rem; padding: 0.85rem; }
+    .grid-container { grid-template-columns: 1fr; }
+    .footer-links a { display: block; margin-bottom: 0.75rem; }
 }
