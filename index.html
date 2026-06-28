@@ -5,27 +5,28 @@
     <!-- Critical Meta Tag for Flawless Mobile Responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Otieno | FMCG Data Automation Architect</title>
+    
+    <!-- Fix 1: Fixed Bootstrap CSS CDN Path -->
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- Fix 2: Fixed Google Fonts Path (Inter for clean engineering UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico">
-
-    <!--Google fonts-->
-    <link href="https://googleapis.com" rel="stylesheet">
-
-    <!---Bootstrap--->
-    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://jsdelivr.net" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://jsdelivr.net" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </head>
   <body>
     <section id="title">
-      <div class="container_fluid">
-        <nav class="navbar navbar-expand-lg nav-light">
+      <div class="container-fluid"> <!-- Fixed container class typo -->
+        <nav class="navbar navbar-expand-lg navbar-light"> <!-- Fixed navbar class typo -->
           <a class="navbar-brand" href="index.html">Kevin Otieno</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Fixed margin typo -->
               <li class="nav-item"><a class="nav-link" href="#pricing">Solutions</a></li>
               <li class="nav-item"><a class="nav-link" href="portfolio.html">Data Projects</a></li>
               <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
@@ -46,87 +47,87 @@
       </div>
     </section>
 
-    <section id="features" class="container">
+    <section id="features" class="container my-5">
       <div class="row g-4">
         <div class="feature-box col-lg-4 col-md-12 text-center">
-          <img class="p_img" src="images/passionate.png" alt="" style="max-width: 80px;">
+          <img class="p_img mb-3" src="images/passionate.png" alt="" style="max-width: 80px;">
           <h3>FMCG Data Scale</h3>
           <p>Capable of processing high-volume daily distribution logs, multi-table sheets, and regional sales metrics.</p>
         </div>
         <div class="feature-box col-lg-4 col-md-12 text-center">
-          <img class="p_img" src="images/time-management.png" alt="" style="max-width: 80px;">
+          <img class="p_img mb-3" src="images/time-management.png" alt="" style="max-width: 80px;">
           <h3>Backend Logic</h3>
           <p>Replacing repetitive, time-consuming data prep routines with optimized script pipelines.</p>
         </div>
         <div class="feature-box col-lg-4 col-md-12 text-center">
-          <img class="p_img" src="images/guarantee.png" alt="" style="max-width: 80px;">
+          <img class="p_img mb-3" src="images/guarantee.png" alt="" style="max-width: 80px;">
           <h3>Guaranteed Accuracy</h3>
           <p>Transforming complex, unformatted operational records into structured, presentation-ready dashboards.</p>
         </div>
       </div>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" class="py-5 bg-light text-center">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h2 class="impr" style="font-size: 1.5rem; padding: 0 10%;">"I no longer have to spend hours sifting through volumes of data for insights. Kevin has automated the process, I just plug in raw data and the results are instant. Amazing!!!!."</h2>
-            <img class="ana_img" src="images/monitor.png" alt="Data Case Study" style="max-width: 60px;">
-            <br><em>Mari Cyril, maricyril@facesintegrated.com</em>
+            <h2 class="impr" style="font-size: 1.5rem; padding: 0 10%; font-style: italic;">"I no longer have to spend hours sifting through volumes of data for insights. Kevin has automated the process, I just plug in raw data and the results are instant. Amazing!!!!."</h2>
+            <img class="ana_img mt-3" src="images/monitor.png" alt="Data Case Study" style="max-width: 60px;">
+            <br><em class="d-block mt-2">Mari Cyril, maricyril@facesintegrated.com</em>
           </div>
           <div class="carousel-item">
-            <h2 class="impr" style="font-size: 1.5rem; padding: 0 10%;">"My day to day work revolves round the use of excel, to better my skill and automate repetitive tasks engaged Kevin who was willing to share the skill and formulas to ensure mastery. Breathtaking."</h2>
-            <img class="ana_img" src="images/excel.png" alt="Excel Dashboards" style="max-width: 60px;">
-            <br><em>Racheal Kimamo, rkimamo@gmail.com</em>
+            <h2 class="impr" style="font-size: 1.5rem; padding: 0 10%; font-style: italic;">"My day to day work revolves round the use of excel, to better my skill and automate repetitive tasks engaged Kevin who was willing to share the skill and formulas to ensure mastery. Breathtaking."</h2>
+            <img class="ana_img mt-3" src="images/excel.png" alt="Excel Dashboards" style="max-width: 60px;">
+            <br><em class="d-block mt-2">Racheal Kimamo, rkimamo@gmail.com</em>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
         </button>
       </div>
     </section>
 
-    <!-- Capabilities Grid with proper Bootstrap mobile sizing -->
-    <section id="pricing" class="container">
-      <h2>Technical Capabilities</h2>
-      <p>Systematic workflows engineered to structure, clean, and map complex commercial operations data parameters.</p>
+    <!-- Capabilities Grid -->
+    <section id="pricing" class="container my-5">
+      <h2 class="text-center mb-2">Technical Capabilities</h2>
+      <p class="text-center text-muted mb-4">Systematic workflows engineered to structure, clean, and map complex commercial operations data parameters.</p>
       
       <div class="row g-4">
         <div class="pricing_col col-lg-4 col-md-12">
-          <div class="card h-100">
-            <div class="card-header"><h3>Excel & Power Query</h3></div>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white"><h3>Excel & Power Query</h3></div>
             <div class="card-body">
-              <p>Automated Power Query Pipelines</p>
-              <p>Advanced Formulas & Matrix Setup</p>
-              <p>Interactive Performance Dashboards</p>
-              <p>Repetitive Task Sheet Automation</p>
+              <p>• Automated Power Query Pipelines</p>
+              <p>• Advanced Formulas & Matrix Setup</p>
+              <p>• Interactive Performance Dashboards</p>
+              <p>• Repetitive Task Sheet Automation</p>
             </div>
           </div>
         </div>
         
         <div class="pricing_col col-lg-4 col-md-12">
-          <div class="card h-100">
-            <div class="card-header"><h3>Python Programming</h3></div>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white"><h3>Python Programming</h3></div>
             <div class="card-body">
-              <p>Automated Script Parsing</p>
-              <p>Data Structures Optimization</p>
-              <p>Custom File Transformation Scripts</p>
-              <p>Multi-Source Validation Functions</p>
+              <p>• Automated Script Parsing</p>
+              <p>• Data Structures Optimization</p>
+              <p>• Custom File Transformation Scripts</p>
+              <p>• Multi-Source Validation Functions</p>
             </div>
           </div>
         </div>
 
         <div class="pricing_col col-lg-4 col-md-12">
-          <div class="card h-100">
-            <div class="card-header"><h3>PostgreSQL DB</h3></div>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white"><h3>PostgreSQL DB</h3></div>
             <div class="card-body">
-              <p>Relational Database Structuring</p>
-              <p>Data Manipulation Language (DML)</p>
-              <p>Data Query Language Optimization</p>
-              <p>Complex Joins & View Aggregations</p>
+              <p>• Relational Database Structuring</p>
+              <p>• Data Manipulation Language (DML)</p>
+              <p>• Data Query Language Optimization</p>
+              <p>• Complex Joins & View Aggregations</p>
             </div>
           </div>
         </div>
@@ -134,9 +135,25 @@
     </section>
 
     <!-- Call to Action -->
-    <section id="cta">
-      <h3 class="ctadetails" style="font-size: 1.8rem; padding: 0 5%;">Extract clear, operational structures from your records to drive data-driven performance with zero formatting backlogs.</h3>
+    <section id="cta" class="bg-dark text-white text-center py-5">
+      <h3 class="ctadetails" style="font-size: 1.8rem; padding: 0 5%; font-weight: 400;">Extract clear, operational structures from your records to drive data-driven performance with zero formatting backlogs.</h3>
     </section>
+
+    <!-- Clean, Automation-Focused Footer -->
+    <footer id="footer" class="text-center py-4 bg-light text-muted" style="font-size: 0.9rem;">
+      <div class="container mb-3">
+        <a href="https://github.com" class="mx-3 text-decoration-none text-secondary" target="_blank">Github Infrastructure</a> | 
+        <a href="https://github.io" class="mx-3 text-decoration-none text-secondary">Data Solutions</a> | 
+        <a href="https://linkedin.com" class="mx-3 text-decoration-none text-secondary" target="_blank">LinkedIn Connect</a>
+      </div>
+      <p class="mb-0">© 2026 Kevin Otieno | Built for Scalable Operations Analytics</p>
+    </footer>
+
+    <!-- Fix 3: Fixed Bootstrap JS Bundle Path & Moved to Bottom for Speed -->
+    <script src="https://jsdelivr.net" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
 
     <!-- Footer with responsive alignment -->
     <footer id="footer" class="container">
